@@ -38,6 +38,7 @@ dependencies {
 
     //    test
     compile("org.springframework.boot:spring-boot-starter-web")
+    compile files("${System.properties['java.home']}/../lib/tools.jar")
     testCompile("org.springframework.boot:spring-boot-starter-test")
     testCompile group: 'org.mockito', name: 'mockito-all', version: '1.8.4'
 
